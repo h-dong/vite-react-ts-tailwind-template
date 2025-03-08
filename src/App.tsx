@@ -16,9 +16,9 @@ function App() {
 					<img src={reactLogo} className="logo react" alt="React logo" />
 				</a>
 			</div>
-			<h1>Hao's Toolbox</h1>
+			<h1>Hao's vite-react-ts-tailwind-template</h1>
 			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
+				<button type="button" onClick={() => setCount((count) => count + 1)}>
 					count is {count}
 				</button>
 				<p>
