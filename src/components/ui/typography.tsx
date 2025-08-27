@@ -12,7 +12,7 @@ const typographyVariants = cva('', {
 			h4: 'scroll-m-20 text-xl font-semibold tracking-tight',
 			h5: 'scroll-m-20 text-lg font-semibold tracking-tight',
 			h6: 'scroll-m-20 text-base font-semibold tracking-tight',
-			p: 'leading-7 [&:not(:first-child)]:mt-6',
+			body: 'leading-7 [&:not(:first-child)]:mt-6',
 			span: 'text-base',
 			blockquote: 'mt-6 border-l-2 pl-6 italic',
 			code: 'bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold',
@@ -24,7 +24,7 @@ const typographyVariants = cva('', {
 		},
 	},
 	defaultVariants: {
-		variant: 'p',
+		variant: 'body',
 	},
 });
 
@@ -52,7 +52,7 @@ const elementMap: Record<
 	h4: 'h4',
 	h5: 'h5',
 	h6: 'h6',
-	p: 'p',
+	body: 'p',
 	span: 'span',
 	blockquote: 'blockquote',
 	code: 'code',
@@ -76,7 +76,7 @@ function Typography({
 	children,
 	...props
 }: TypographyProps) {
-	const Component = as || elementMap[variant || 'p'];
+	const Component = as || elementMap[variant || 'body'];
 
 	return (
 		<Component

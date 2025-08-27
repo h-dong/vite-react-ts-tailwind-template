@@ -25,12 +25,12 @@ function App() {
 				<Button type="button" onClick={() => setCount((count) => count + 1)}>
 					count is {count}
 				</Button>
-				<Typography variant="p">
+				<Typography variant="body">
 					Edit <Typography variant="code">src/App.tsx</Typography> and save to
 					test HMR
 				</Typography>
 			</div>
-			<Typography variant="p" className="read-the-docs">
+			<Typography variant="body" className="read-the-docs">
 				Click on the Vite and React logos to learn more
 			</Typography>
 		</>
