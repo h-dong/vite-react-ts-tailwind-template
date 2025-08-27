@@ -20,6 +20,18 @@
 			"recommended": true
 		}
 	},
+	"overrides": [
+		{
+			"includes": ["src/index.css"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noUnknownAtRules": "off"
+					}
+				}
+			}
+		}
+	],
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single",
